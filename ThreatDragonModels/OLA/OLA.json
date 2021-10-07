@@ -1,0 +1,25 @@
+{
+  "summary": {
+    "title": "OLA",
+    "owner": "Vicky"
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "umeshjoshi22007@gmail.com"
+      }
+    ],
+    "diagrams": [
+      {
+        "title": "OLA_DFD_Level0",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 0
+      },
+      {
+        "title": "OLA_DFD_Level1",
+        "thumbnail": "./public/content/images/thumbnail.jpg",
+        "id": 1
+      }
+    ]
+  }
+}
