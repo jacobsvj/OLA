@@ -615,8 +615,8 @@
                 "height": 80
               },
               "position": {
-                "x": 81,
-                "y": 30
+                "x": 112,
+                "y": 12
               },
               "angle": 0,
               "id": "aef78574-b818-4886-beeb-e4bb4208e12a",
@@ -632,7 +632,7 @@
                 },
                 {
                   "status": "Open",
-                  "severity": "High",
+                  "severity": "Medium",
                   "title": "Authorization",
                   "type": "Information disclosure",
                   "description": "Attacker can access to the information which is not authorized to them."
@@ -709,7 +709,7 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "description": "Attackers may persuade into website by accessing to the password user has chosen.",
                   "type": "Spoofing",
                   "title": "Phishing",
@@ -756,7 +756,8 @@
                   "severity": "Medium",
                   "title": "Denial of Service Attack",
                   "type": "Denial of service",
-                  "description": "Attackers can flood of traffic from users and may crash database accessibility."
+                  "description": "Attackers can flood of traffic from users and may crash database accessibility.",
+                  "mitigation": "Blocking malicious web requests.\nArchiving external data and encrypting databases."
                 }
               ],
               "attrs": {
@@ -780,7 +781,12 @@
               "target": {
                 "id": "aef78574-b818-4886-beeb-e4bb4208e12a"
               },
-              "vertices": [],
+              "vertices": [
+                {
+                  "x": 231,
+                  "y": 144
+                }
+              ],
               "id": "916a51ce-25c3-486e-86f7-b9cbe14437f9",
               "labels": [
                 {
@@ -1017,8 +1023,9 @@
                   "status": "Open",
                   "severity": "Medium",
                   "type": "Denial of service",
-                  "description": "Attackers can flood of traffic from users and may crash database accessibility.",
-                  "title": "Denial of service attack"
+                  "description": "Database Backups Exposure where attackers can access the database backup",
+                  "title": "Denial of service attack",
+                  "mitigation": "Encrypt both databases and backups\nBlocking malicious web requests"
                 }
               ],
               "attrs": {
@@ -1125,7 +1132,7 @@
               "threats": [
                 {
                   "status": "Open",
-                  "severity": "Medium",
+                  "severity": "High",
                   "title": "keyloggers",
                   "type": "Spoofing",
                   "description": "Attackers may persuade into website by installing a keylogger can access to the password user has chosen.",
@@ -1415,7 +1422,8 @@
                   "severity": "Medium",
                   "title": "Denial of Service Attack",
                   "type": "Denial of service",
-                  "description": "Attackers can flood of traffic from users and may crash database accessibility."
+                  "description": "Attackers can flood of traffic from users and may crash database accessibility.",
+                  "mitigation": "Apply required controls and permissions to the database\nEncrypt all sensitive data in your database"
                 },
                 {
                   "status": "Open",
