@@ -621,16 +621,48 @@
               "angle": 0,
               "id": "aef78574-b818-4886-beeb-e4bb4208e12a",
               "z": 1,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Spoofing",
+                  "type": "Spoofing",
+                  "description": "User may spoofed by an attacker and get access to their OLA account and other credentials."
+                },
+                {
+                  "status": "Open",
+                  "severity": "High",
+                  "title": "Authorization",
+                  "type": "Information disclosure",
+                  "description": "Attacker can access to the information which is not authorized to them."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Elevation of privilege",
+                  "title": "Cookie scraping",
+                  "description": "Attacker can take over the user session when user logs into a particular service like internet banking.",
+                  "mitigation": "Clear cookies regularly\nInstall a trusted antivirus\nAvoid clicking suspicious links."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Users may deny that they booked for OLA service",
+                  "type": "Repudiation",
+                  "title": "Repudiation",
+                  "mitigation": "Multi factor authentication.\nDigital signature"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Customer"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -667,8 +699,8 @@
                 "height": 100
               },
               "position": {
-                "x": 566,
-                "y": 86
+                "x": 608,
+                "y": 50
               },
               "angle": 0,
               "id": "4213d3d6-9684-4c54-a205-c584fa7ecfcd",
@@ -944,16 +976,33 @@
               "angle": 0,
               "id": "6f14b0c2-2a7f-4ee1-9733-3693679b7992",
               "z": 13,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attacker may insert malicious file that change the configuration of database, modify user credentials to gain access to sensitive data.",
+                  "title": "Data tampering",
+                  "mitigation": "File Integrity Monitoring\nHash-based message authentication code.\nEnforce Encryption for Data."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "Attackers can flood of traffic from users and may crash database accessibility.",
+                  "title": "Denial of service attack"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Transaction Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1003,22 +1052,32 @@
                 "height": 80
               },
               "position": {
-                "x": 915,
-                "y": 39
+                "x": 928,
+                "y": 85
               },
               "angle": 0,
               "id": "1964f506-a501-43de-a7e0-e689dcc9c4ac",
               "z": 15,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "Taxi owner may claim that transaction is not completed.",
+                  "mitigation": "Multi factor authentication.\nDigital signature",
+                  "title": "Repudiation"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Taxi Owner"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1035,16 +1094,26 @@
               "angle": 0,
               "id": "d9387cee-1df0-47b0-b414-82d05a979e67",
               "z": 16,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "keyloggers",
+                  "type": "Spoofing",
+                  "description": "Attackers may persuade into website by installing a keylogger can access to the password user has chosen.",
+                  "mitigation": "Two factor authentication\nImplementing federated or single sign on."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Register/Login\nTaxi"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1131,8 +1200,8 @@
                 "height": 100
               },
               "position": {
-                "x": 747,
-                "y": 176
+                "x": 480,
+                "y": 335
               },
               "angle": 0,
               "id": "d95d171f-3e1e-42b7-9bee-41e67c6719c8",
@@ -1306,8 +1375,8 @@
                 "height": 80
               },
               "position": {
-                "x": 377,
-                "y": 463
+                "x": 314,
+                "y": 573
               },
               "angle": 0,
               "id": "75c7c9d3-e04f-463e-999a-34830b4f4941",
