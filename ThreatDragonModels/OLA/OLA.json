@@ -705,16 +705,26 @@
               "angle": 0,
               "id": "4213d3d6-9684-4c54-a205-c584fa7ecfcd",
               "z": 4,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "description": "Attackers may persuade into website by accessing to the password user has chosen.",
+                  "type": "Spoofing",
+                  "title": "Phishing",
+                  "mitigation": "Two factor authentication\nImplementing federated or single sign on."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Register/Login\nCustomer"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -731,16 +741,33 @@
               "angle": 0,
               "id": "cc2a8d7e-8048-4bad-bfb3-ecf893d1ef62",
               "z": 5,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Data tampering",
+                  "type": "Tampering",
+                  "description": "Attacker may insert malicious file that change the configuration of database, modify user credentials to gain access to sensitive data.",
+                  "mitigation": "File Integrity Monitoring\nHash-based message authentication code.\nEnforce Encryption for Data."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Denial of Service Attack",
+                  "type": "Denial of service",
+                  "description": "Attackers can flood of traffic from users and may crash database accessibility."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Customer Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -971,7 +998,7 @@
               },
               "position": {
                 "x": 68,
-                "y": 465
+                "y": 466
               },
               "angle": 0,
               "id": "6f14b0c2-2a7f-4ee1-9733-3693679b7992",
@@ -1381,16 +1408,33 @@
               "angle": 0,
               "id": "75c7c9d3-e04f-463e-999a-34830b4f4941",
               "z": 24,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "Denial of Service Attack",
+                  "type": "Denial of service",
+                  "description": "Attackers can flood of traffic from users and may crash database accessibility."
+                },
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Tampering",
+                  "description": "Attacker may insert malicious file that change the configuration of database, modify user credentials to gain access to sensitive data.",
+                  "title": "Data tampering",
+                  "mitigation": "File Integrity Monitoring\nHash-based message authentication code.\nEnforce Encryption for Data."
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Taxi Database"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
@@ -1552,16 +1596,25 @@
               "angle": 0,
               "id": "afb3b6f2-1235-4699-a5b5-36851d070ff1",
               "z": 29,
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
+              "threats": [
+                {
+                  "status": "Open",
+                  "severity": "Medium",
+                  "title": "XSS",
+                  "type": "Information disclosure",
+                  "description": "Attackers may try to add  malicious code from the UI"
+                }
+              ],
               "attrs": {
                 ".element-shape": {
-                  "class": "element-shape hasNoOpenThreats isInScope"
+                  "class": "element-shape hasOpenThreats isInScope"
                 },
                 "text": {
                   "text": "Admin"
                 },
                 ".element-text": {
-                  "class": "element-text hasNoOpenThreats isInScope"
+                  "class": "element-text hasOpenThreats isInScope"
                 }
               }
             },
